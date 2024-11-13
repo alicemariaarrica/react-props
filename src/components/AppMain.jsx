@@ -1,19 +1,19 @@
 import Posts from '../data/Array.js'
 
-import PostCard from "./Card/Card.jsx";
+import CreateCard from "./Card/Card.jsx";
 
 
 
 export default function AppMain() {
     // logica
-    const Published_Posts = posts.filter(post => post.published === true);
+    const Published_Posts = Posts.filter(post => post.published === true);
 
     // markup
     return (
         <main>
             <div className="container">
                 <div className="row">
-                    {Published_Posts.map(post => <Card key={post.id} post={post} />)}
+                    {Published_Posts.map(post => <CreateCard key={post.id} post={post} />)}
                 </div>
             </div>
         </main>

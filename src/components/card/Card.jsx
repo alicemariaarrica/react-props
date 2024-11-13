@@ -1,6 +1,6 @@
 export default function CreateCard({ post }) {
     return (
-        <div className="card-post">
+        <div className="Card">
             <img src={post.image} alt="" />
             <div className="params">
                 <h3>{post.title}</h3>
