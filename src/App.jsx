@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 
-import Card from "./components/Card";
+import Card from "./components/Card/Card.jsx";
 export default function App() {
   return <Card title="Titolo" content="Contenuto" />;
 }
