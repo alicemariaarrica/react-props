@@ -1,0 +1,10 @@
+.btn {
+    border: none;
+    border-radius: 3px;
+    text-decoration: none;
+    font-size: 12px;
+    background-color: pink;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase
+}

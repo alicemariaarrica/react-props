@@ -1,17 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import AppHeader from './components/AppHeader.jsx'
+import AppMain from './components/AppMain.jsx'
+import AppFooter from './components/AppFooter.jsx'
 import viteLogo from '/vite.svg'
 import './App.css'
 
+function App() {
 
-import Card from "./components/Card/Card.jsx";
 
-export default function App() {
-  return <Card title="Titolo" content="Contenuto" />;
+  return (
+    <>
+      <AppHeader />
+      <AppMain />
+      <AppFooter />
+    </>
+  )
 }
 
-{/*Esercizio
-Partendo dall'esercizio di ieri e dall'array di posts allegato, l'obiettivo è creare dinamicamente gli articoli all'interno della pagina.
-I dati relativi a ciascun post dovranno essere passati come props ai componenti.
-Ogni post ha una proprietà published, e gli articoli devono essere mostrati solo se questa proprietà è impostata su true.
-Assegnate colori diversi ai tag dei posts, ad esempio: verde per html, rosa per css, etc…*/}
+export default App

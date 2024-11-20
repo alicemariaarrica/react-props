@@ -1,13 +1,17 @@
-export default function appHeader() {
+import reactLogo from '../assets/react.svg'
 
-    // logic
-    const title = "I miei post"
+export default function () {
 
-    // markup (JSX)
+    const appTitle = 'Il mio Blog'
+
+
     return (
         <header>
             <div className="container">
-                <h1>{title}</h1>
+                <img src={reactLogo} alt="" />
+                <h1>
+                    {appTitle}
+                </h1>
             </div>
         </header>
     )
